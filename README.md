@@ -7,8 +7,12 @@ ____
 
 ![image](https://github.com/poco1337/PracticalWork2/assets/98651796/481c7983-cad7-407b-b2c7-a9ffce152967)
 
-Виконання:
+Виконання IntelIj Idea:
 ![image](https://github.com/poco1337/PracticalWork2/assets/98651796/0f7edbb2-fb83-4d00-923f-b0de323c8436)
+____
+Виконання WSL:
+![image](https://github.com/poco1337/PracticalWork2/assets/98651796/083b2453-7b42-4309-b25f-ce9313a09f7f)
+
 # Код
 Class Student
 
