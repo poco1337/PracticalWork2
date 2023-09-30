@@ -42,5 +42,8 @@ public class ControlCenter {
             return studentsBornAfterYear;
         }
     }
+    public List<Faculty> getFaculties() {
+        return faculties;
+    }
     public ControlCenter() {}
 }

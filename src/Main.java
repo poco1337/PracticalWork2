@@ -1,9 +1,11 @@
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         ControlCenter controlCenter = new ControlCenter();
+        System.setProperty("console.encoding", "UTF-16");
 
         Faculty programming = new Faculty("Інженерія програмного забеспечення");
         Faculty economy = new Faculty("Економіка");
@@ -20,6 +22,13 @@ public class Main {
         Student student3 = new Student("Олег", "Михайлович", "Логіненко", 2004, " вул. Занковецька, 16", "380502222222", economy, thirdCourse);
         Student student4 = new Student("Іванка", "Сергіївна", "Івакуренко", 2003, " вул. Занковецька, 17", "380503333333", psychology, fourthCourse);
         Student student5 = new Student("Олександр", "Андрійович", "Івакуренко", 2006, " вул. Верещагіна, 1", "380504444444", psychology, firstCourse);
+
+        System.out.println("Наявні факультети:");
+        for(Faculty faculty:controlCenter.getFaculties()) {
+            System.out.println(faculty.toString());
+        }
+
+
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введіть факультет, учнів яких ви хочете побачити:");
