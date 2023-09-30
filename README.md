@@ -249,6 +249,13 @@ public class Main {
         Student student4 = new Student("Іванка", "Сергіївна", "Івакуренко", 2003, " вул. Занковецька, 17", "380503333333", psychology, fourthCourse);
         Student student5 = new Student("Олександр", "Андрійович", "Івакуренко", 2006, " вул. Верещагіна, 1", "380504444444", psychology, firstCourse);
 
+        System.out.println("Наявні факультети:");
+        for(Faculty faculty:controlCenter.getFaculties()) {
+            System.out.println(faculty.toString());
+        }
+
+
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введіть факультет, учнів яких ви хочете побачити:");
         String input = scanner.nextLine();
